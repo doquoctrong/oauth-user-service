@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+  <application>captive-portal</application>
+  <version>user-service-demo</version>
+  <threadsafe>true</threadsafe>
+  <sessions-enabled>true</sessions-enabled>
+
+  <system-properties>
+    <!-- Configure java.util.logging -->
+    <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
+    <!--
+    <property name="hibernate.show_sql" value="true"/>
+    <property name="hibernate.format_sql" value="true"/>
+    -->
+    
+    <!--
+    <property name="delme_org.springframework.boot.logging.LoggingSystem" value="org.springframework.boot.logging.log4j2.Log4J2LoggingSystem"/>
+      <property name="org.springframework.boot.logging.LoggingSystem" value="org.springframework.boot.logging.java.JavaLoggingSystem"/>
+    <property name="log4j2.disable.jmx" value="true"/>
+    -->
+  </system-properties>
+
+  <static-files>
+    <include path="/**.js" />
+    <include path="/**.css" expiration="14d" />
+    <include path="/**.png" expiration="14d" />
+    <include path="/**.jpg" expiration="14d" />
+    <include path="/**.gif" expiration="14d" />
+    <include path="/**.ico" expiration="14d" />
+    <include path="/favicon.ico" expiration="14d" />
+    <include path="/**.xsl" expiration="14d" />
+    <include path="/**.txt" expiration="14d" />
+    <include path="/VAADIN/**" expiration="14d" />
+
+    <!-- Font files -->
+    <include path="/**.otf" expiration="14d" />
+    <include path="/**.eot" expiration="14d" />
+    <include path="/**.svg" expiration="14d" />
+    <include path="/**.ttf" expiration="14d" />
+    <include path="/**.woff" expiration="14d" />
+
+    <include path="/static/**.*" expiration="14d" />
+  </static-files>
+</appengine-web-app>

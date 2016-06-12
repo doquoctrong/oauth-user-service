@@ -1,0 +1,162 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<jpr:project xmlns:jpr="http://xmlns.oracle.com/ide/project">
+   <hash n="component-versions">
+      <value n="oracle.ide.model.Project" v="12.1.3.0.0"/>
+      <value n="oracle.ide.model.ResourcePathsMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.ideimpl.model.TechnologyScopeUpdateMigrator" v="11.1.2.0.0.5"/>
+      <value n="oracle.jdeveloper.library.ProjectLibraryMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jdeveloper.model.OutputDirectoryMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jdevimpl.deploy.migrators.DeploymentMigrator" v="12.1.2.0.1"/>
+   </hash>
+   <list n="contentSets">
+      <string v="oracle.jdeveloper.model.PathsConfiguration/javaContentSet"/>
+      <string v="oracle.ide.model.ResourcePaths/resourcesContentSet"/>
+   </list>
+   <value n="defaultPackage" v="vn.khtt"/>
+   <hash n="oracle.ide.model.DependencyConfiguration">
+      <list n="dependencyList">
+         <hash>
+            <hash n="dependable">
+               <url n="sourceOwnerURL" path="../oauth-user-service.jws"/>
+               <url n="sourceURL" path="../user-service-core/user-service-core.jpr"/>
+            </hash>
+            <value n="recognizerId" v="oracle.jdeveloper.library"/>
+         </hash>
+      </list>
+   </hash>
+   <hash n="oracle.ide.model.ResourcePaths">
+      <hash n="resourcesContentSet">
+         <list n="constituent-sets">
+            <hash>
+               <list n="pattern-filters">
+                  <string v="+*"/>
+               </list>
+               <list n="url-path">
+                  <url path="."/>
+               </list>
+            </hash>
+            <hash>
+               <list n="pattern-filters">
+                  <string v="+**"/>
+               </list>
+               <list n="url-path">
+                  <url path="src/main/webapp/"/>
+               </list>
+            </hash>
+            <hash>
+               <list n="pattern-filters">
+                  <string v="+**"/>
+               </list>
+               <list n="url-path">
+                  <url path="src/main/resources/"/>
+               </list>
+            </hash>
+         </list>
+         <list n="url-path"/>
+      </hash>
+   </hash>
+   <hash n="oracle.ide.model.TechnologyScopeConfiguration">
+      <list n="technologyScope">
+         <string v="Java"/>
+         <string v="XML"/>
+      </list>
+   </hash>
+   <hash n="oracle.jdeveloper.compiler.OjcConfiguration">
+      <value n="internalEncoding" v="UTF-8"/>
+      <value n="webIANAEncoding" v="UTF-8"/>
+   </hash>
+   <hash n="oracle.jdeveloper.model.PathsConfiguration">
+      <hash n="javaContentSet">
+         <list n="pattern-filters">
+            <string v="+**"/>
+         </list>
+         <list n="url-path">
+            <url path="src/main/java/"/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.jdeveloper.runner.RunConfigurations">
+      <hash n="runConfigurationDefinitions">
+         <hash n="Default">
+            <value n="custom" v="false"/>
+            <value n="javaOptions" v="-javaagent:C:\apps\appengine-java-sdk-1.9.25\lib\agent\appengine-agent.jar -Xmx1024m -XX:PermSize=64M -XX:MaxPermSize=128M"/>
+            <value n="name" v="Default"/>
+            <url n="runDirectoryURL" path="target/user-service-demo-1.0.0/"/>
+            <url n="targetURL" path="src/main/java/dev/StartDevAppServer.java"/>
+         </hash>
+      </hash>
+   </hash>
+   <hash n="oracle.jdevimpl.config.JProjectLibraries">
+      <list n="exportedReferences">
+         <hash>
+            <url n="id" path="../../../system12.1.3.0.41.140521.1008/o.jdeveloper/servlet-api-2.5.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <url n="id" path="../../../system12.1.3.0.41.140521.1008/o.jdeveloper/appengine-1.9.25.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <url n="id" path="../../../system12.1.3.0.41.140521.1008/o.jdeveloper/scribejava-apis-2.4.0.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <url n="id" path="../../../system12.1.3.0.41.140521.1008/o.jdeveloper/objectify-5.1.12.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="WEB-LIBS"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+      </list>
+      <hash n="internalDefinitions">
+         <list n="libraryDefinitions">
+            <hash>
+               <list n="classPath">
+                  <url path="target/user-service-1.0.0/WEB-INF/lib/appengine-api-1.0-sdk-1.9.25.jar" jar-entry=""/>
+                  <url path="target/user-service-1.0.0/WEB-INF/lib/guava-18.0.jar" jar-entry=""/>
+                  <url path="target/user-service-1.0.0/WEB-INF/lib/jackson-annotations-2.7.4.jar" jar-entry=""/>
+                  <url path="target/user-service-1.0.0/WEB-INF/lib/jackson-core-2.7.4.jar" jar-entry=""/>
+                  <url path="target/user-service-1.0.0/WEB-INF/lib/jackson-databind-2.7.4.jar" jar-entry=""/>
+                  <url path="target/user-service-1.0.0/WEB-INF/lib/jstl-1.2.jar" jar-entry=""/>
+                  <url path="target/user-service-1.0.0/WEB-INF/lib/objectify-5.1.12.jar" jar-entry=""/>
+                  <url path="target/user-service-1.0.0/WEB-INF/lib/scribejava-apis-2.4.0.jar" jar-entry=""/>
+                  <url path="target/user-service-1.0.0/WEB-INF/lib/scribejava-core-2.4.0.jar" jar-entry=""/>
+               </list>
+               <value n="description" v="WEB-LIBS"/>
+               <value n="id" v="WEB-LIBS"/>
+            </hash>
+         </list>
+      </hash>
+      <hash n="jdkReference">
+         <url n="id" path="../../../system12.1.3.0.41.140521.1008/o.jdeveloper/1.7.0_79.jdk"/>
+         <value n="isJDK" v="true"/>
+         <value n="jdkVersion" v="1.7.0_79"/>
+      </hash>
+      <list n="libraryReferences">
+         <hash>
+            <url n="id" path="../../../system12.1.3.0.41.140521.1008/o.jdeveloper/servlet-api-2.5.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <url n="id" path="../../../system12.1.3.0.41.140521.1008/o.jdeveloper/appengine-1.9.25.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <url n="id" path="../../../system12.1.3.0.41.140521.1008/o.jdeveloper/scribejava-apis-2.4.0.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <url n="id" path="../../../system12.1.3.0.41.140521.1008/o.jdeveloper/objectify-5.1.12.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="WEB-LIBS"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+      </list>
+   </hash>
+   <hash n="oracle.jdevimpl.config.JProjectPaths">
+      <url n="outputDirectory" path="target/user-service-demo-1.0.0/WEB-INF/classes/"/>
+   </hash>
+</jpr:project>
